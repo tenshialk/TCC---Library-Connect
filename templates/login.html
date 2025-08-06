@@ -1,26 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro </title>
-    
+    <title>Login</title>
 </head>
 <body>
-      Nome: <input type="text" name="nome"><br>
-      E-mail: <input type="text" name="email"><br>
-      criar senha: <input type="password" name="senha"><br>
-      Confirmação de senha: <input type="password" name="csenha"><br>
-      sexo: <input type="text" name="sexo"><br>
-      Data de nascimento: <input type="date" name="data_nascimento"><br>
-      Administrador: 
-        <select name="admin">
-          <option value="True">Sim</option>
-          <option value="False">Não</option>
-        </select><br>
-      <input type="submit" value="cadastrar">
-      ja tem conta? <a href="login">login</a>
-    </form>
+    <h1>Faça seu login</h1>
+        <label for="email">E-mail:</label>
+        <input type="text" id="email" name="email" required><br><br>
 
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required><br><br>
+        <a href="recuperar_senha.html">Esquecir minha Senha</a><br><br>
+
+        <input type="submit" value="Login">
+    </form>
+    
+    <p>Não tem conta? <a href="cadastro.html">Cadastre-se</a></p>
 </body>
 </html>
