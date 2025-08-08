@@ -1,0 +1,14 @@
+body {
+  margin-top: 200px; /* empurra tudo para baixo */
+  margin-bottom: 0;
+  margin-left: 200px; /* corrigido */
+  background: linear-gradient(to right, rgb(255, 251, 250) 50%,   rgb(0, 51, 102) 50%);
+}
+
+h1 {
+  margin-left: 5px; /* margem à esquerda */
+  font-size: 39px;
+  margin-bottom: 40px;
+  margin-top: 0;  
+}
+

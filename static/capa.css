@@ -1,0 +1,142 @@
+/* Reset e configurações básicas */
+* {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Container do topo (menu) */
+.container {
+  background-color: #003366;
+  padding: 15px 40px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  color: white;
+}
+
+.container img {
+  width: 50px;
+  height: 50px;
+}
+
+.container h3 {
+  margin: 0 10px; 
+}
+
+.container h3:hover {
+  text-decoration: underline;
+}
+
+/* Botões de login e cadastro */
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 40px;
+  gap: 10px;
+}
+
+.buttons button {
+  padding: 8px 16px;
+  font-weight: bold;
+}
+
+.buttons a {
+  text-decoration: none;
+}
+
+.buttons button:hover {
+  opacity: 0.9;
+}
+
+
+.buttons button:last-child {
+  background-color: #01467c;
+  color: white;
+  border: 1px solid #01467c;
+}
+
+/* Frase de boas-vindas */
+.frase {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.frase h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.frase p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.frase .btn {
+  background-color: #01467c;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Destaques do acervo */
+.destaques-do-acervo {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #ffffff;
+}
+
+.destaques-do-acervo h2 {
+  margin-bottom: 20px;
+}
+
+.destaques-do-acervo img {
+  width: 150px;
+  height: auto;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: transform 0.3s;
+}
+
+.destaques-do-acervo img:hover {
+  transform: scale(1.05);
+}
+
+/* Seção "Crie uma conta" */
+.conta {
+  background-color: #01467c;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.conta img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.conta p {
+  font-size: 18px;
+}
+
+.conta .btn {
+  background-color: white;
+  color: #01467c;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.conta .btn:hover {
+  opacity: 0.9;
+}

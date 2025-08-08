@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca</title>
+</head>
+<body>
+    
+    <h1>Olá, Mariana! Seja bem-vinda à sua Biblioteca.</h1>
+    
+    <form action="/search" method="get">
+        <input type="text" name="q" placeholder="Pesquisar...">
+        <button type="submit">
+            <img src="{{ url_for('static', filename='lupa.svg') }}" alt="Pesquisar">
+        </button>
+    </form>
+
+    <nav>
+        <a href="/favoritos">Favoritos</a> |
+        <a href="/recentes">Recentes</a>
+    </nav>
+
+</body>
+</html>
