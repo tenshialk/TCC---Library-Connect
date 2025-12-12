@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='cadastro.css') }}">
 </head>
 <body>
-    <h1>Crie sua conta</h1>
+    <div class="container"> 
+        <h1>Faça seu Cadastro</h1>
         <label for="nome">Nome:</label>
         <input type="text" id="nome" name="nome" required><br><br>
 
@@ -40,7 +41,9 @@
 
         <input type="submit" value="Cadastrar">
     </form>
+    <p class="sem-conta">
+    Não tem conta? <a href="login">Login</a>
+  </p>
 
-    <p>Não tem conta? <a href="login">Login</a></p>
 </body>
 </html>
