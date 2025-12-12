@@ -1,14 +1,68 @@
 body {
-  margin-top: 200px; /* empurra tudo para baixo */
+  margin-top: 50px; /* empurra tudo para baixo */
   margin-bottom: 0;
-  margin-left: 200px; /* corrigido */
+  margin-left: 170px; /* corrigido */
   background: linear-gradient(to right, rgb(255, 251, 250) 50%,   rgb(0, 51, 102) 50%);
+  font-family: "Poltawski Nowy";
+  
 }
 
 h1 {
-  margin-left: 5px; /* margem à esquerda */
-  font-size: 39px;
-  margin-bottom: 40px;
-  margin-top: 0;  
+    color: #036;
+    font-family: "Poltawski Nowy";
+    font-size: 39px;
+    text-align: center; /* ✔ centraliza */
 }
 
+.container {
+    background: #FFFBFA;
+    border-radius: 20px;
+    padding: 40px;
+    padding-right: 69px;
+    max-width: 450px;
+    margin: 120px auto;
+    margin-left:10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select {
+      border-radius: 10px;
+      border: 1px solid #C5C9D0;
+      background: linear-gradient(0deg, #FFFBFA 0%, #FFFBFA 100%), #C5C9D0;
+      width: 448px;
+      height: 50px;
+}
+
+label {
+    color: #C5C9D0;
+    font-size: 20px;
+}
+
+input[type="submit"] {
+  border-radius: 10px;
+  background: linear-gradient(0deg, #036 0%, #036 100%), linear-gradient(0deg, #C5C9D0 0%, #C5C9D0 100%), #FFFBFA;
+  width: 448px;
+  padding: 13px 0;
+  color:#FFFBFA;
+}
+
+.sem-conta {
+    color: #9CA3AF;
+    font-family: "Poltawski Nowy", sans-serif;
+    font-size: 16px;
+    text-align: center;  
+    margin-top: 20px;     
+}
+
+.sem-conta a {
+    color: #0059B3;           /* cor do link */
+    text-decoration: none;
+}
+
+.sem-conta a:hover {
+    text-decoration: underline; 
+}
