@@ -40,6 +40,7 @@ select {
 label {
     color: #C5C9D0;
     font-size: 20px;
+    font-family: Poly;
 }
 
 input[type="submit"] {
@@ -66,3 +67,19 @@ input[type="submit"] {
 .sem-conta a:hover {
     text-decoration: underline; 
 }
+
+
+.logo {
+    position: fixed;      /* fixa na tela */
+    right: 80px;          /* empurra para o lado azul */
+    top: 50%;             /* meio da tela */
+    transform: translateY(-50%);
+}
+
+.logo svg {
+    width: 300px;
+    height: auto;
+    fill: #FFFBFA;
+    margin-right: 160px;
+}
+

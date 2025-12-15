@@ -1,29 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-   <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
-    <title>perfil</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='perfil.css') }}">
+    <title>Perfil</title>
 </head>
+
 <body>
-    <div class="image">
-        <img src="" alt="">
+    <div class="top">
+    <div class="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="216" height="186" viewBox="0 0 216 186" fill="none">
+  <path d="M212 0H140C133.386 0.00308367 126.9 1.83839 121.255 5.30447C115.61 8.77056 111.024 13.7334 108 19.6484C104.976 13.7334 100.39 8.77056 94.7446 5.30447C89.0997 1.83839 82.6142 0.00308367 76 0H4C2.93913 0 1.92172 0.423766 1.17157 1.17807C0.421428 1.93238 0 2.95544 0 4.02219V148.821C0 149.888 0.421428 150.911 1.17157 151.665C1.92172 152.42 2.93913 152.843 4 152.843H76C83.4261 152.843 90.548 155.81 95.799 161.09C101.05 166.37 104 173.531 104 180.999C104 182.065 104.421 183.088 105.172 183.843C105.922 184.597 106.939 185.021 108 185.021C109.061 185.021 110.078 184.597 110.828 183.843C111.579 183.088 112 182.065 112 180.999C112 173.531 114.95 166.37 120.201 161.09C125.452 155.81 132.574 152.843 140 152.843H212C213.061 152.843 214.078 152.42 214.828 151.665C215.579 150.911 216 149.888 216 148.821V4.02219C216 2.95544 215.579 1.93238 214.828 1.17807C214.078 0.423766 213.061 0 212 0ZM76 144.799H8V8.04438H76C83.4261 8.04438 90.548 11.0107 95.799 16.2909C101.05 21.571 104 28.7325 104 36.1997V158.273C100.631 154.065 96.3674 150.671 91.5217 148.339C86.676 146.007 81.372 144.797 76 144.799ZM208 144.799H140C134.627 144.799 129.323 146.011 124.477 148.344C119.632 150.678 115.368 154.074 112 158.283V36.1997C112 28.7325 114.95 21.571 120.201 16.2909C125.452 11.0107 132.574 8.04438 140 8.04438H208V144.799Z" fill="#FFFBFA"/>
+</svg>
     </div>
+
+    <div class="profile-image">
+        <img id="preview" src="{{ url_for('static', filename='perfil.png') }}">
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="190" height="180" viewBox="0 0 190 180" fill="none">
+            <path d="M95 1C146.966 1 189 40.8969 189 90C189 139.103 146.966 179 95 179C43.0336 179 1 139.103 1 90C1 40.8969 43.0336 1 95 1Z"
+                  fill="#C5C9D0"
+                  fill-opacity="0.2"
+                  stroke="#0C60B4"
+                  stroke-width="2"/>
+        </svg>
     </div>
-    <h1>perfil</h1>
-        <label for="Nome ">Nome</label>
-        <input type="email" id="email" name="email" required><br><br>
 
-        <label for="E-mail">E-mail</label>
-        <input type="password" id="senha" name="senha" required><br><br>
+    <form class="perfil-form">
 
-        <label for="senha">Senha</label>
-        <input type="password" id="senha" name="senha" required><br><br>
+        <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required>
+        </div>
 
+        <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+        </div>
 
-        <input type="submit" value="Salvar">
-        <input type="submit" value="Cancelar">
+        <div class="form-group">
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha" required>
+        </div>
+
+        <div class="form-buttons">
+            <input type="submit" class="btn-salvar" value="Salvar">
+            <input type="button" class="btn-cancelar" value="Cancelar">
+
+        </div>
 
     </form>
 

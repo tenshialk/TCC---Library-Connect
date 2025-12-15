@@ -1,0 +1,83 @@
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 822px;
+    height: 60px;
+    border-radius: 10px;
+    border: 1px solid #C5C9D0;
+    background: #FFF;
+    padding: 0 15px;
+    font-size: 16px;
+    margin-left: 350px;
+    margin-bottom: 20px;
+    font-family: Poly
+    
+    
+}
+
+/* BOTÃO SALVAR */
+.btn-salvar {
+    width: 170px;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    background: #036;
+    color: #fff;
+    cursor: pointer;
+    margin-left:400px;
+    font-family: Poly;
+}
+
+/* BOTÃO CANCELAR */
+.btn-cancelar {
+    width: 170px;
+    height: 60px;
+    border-radius: 10px;
+    border: 1px solid #036;
+    background: #FFF;
+    color: #036;
+    cursor: pointer;
+    margin-left: 400px;
+    font-family: Poly
+}
+
+svg{
+    width: 190px;
+    height: 290px;
+    fill: rgba(197, 201, 208, 0.20);
+    stroke-width: 2px;
+    stroke: #0C60B4;
+    margin-left:660px;
+}
+
+
+.top{
+   width: 1590px;
+   height: 50px;
+   background: #036;
+}
+
+label {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    color: #036;
+    margin-left: 350px;   /* alinha com o input */
+    margin-bottom: 8px;   /* espaço entre texto e campo */
+    font-family: Poly
+}
+
+
+form {
+    margin-top: -50px;  /* aproxima os inputs da foto */
+}
+
+.logo svg {
+    width: 40px;
+    height: 50px;
+    margin-left: 30px;
+    fill: #FFFBFA;
+}
+
+

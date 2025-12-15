@@ -1,19 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>geral</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/geral.css') }}">
+    <title>Geral</title> 
 </head>
 <body>
-      <form action="/search" method="get">
+    <div class="top">
+    <div class="logo">
+    <a href="/"><img src="{{ url_for('static', filename='logo.svg') }}" alt="Logo"></a>
+    </div>
+<header>
+    <!-- FORMULÁRIO DE BUSCA -->
+    <form class="search-form" action="/search" method="get">
         <input type="text" name="q" placeholder="Pesquisar...">
         <button type="submit">
             <img src="{{ url_for('static', filename='lupa.svg') }}" alt="Pesquisar">
         </button>
     </form>
+    <div class="user-menu">
+        ☰
+        <div class="dropdown">
+            <a href="#">📖 Histórico de leitura</a>
+            <a href="#">🤍 Livros favoritos</a>
+            <a href="#">👤 Suporte</a>
+            <a href="#">⚙️ Alteração de dados</a>
+            <a href="#">🚪 Sair</a>
+        </div>
+    </div>
+</header>
+
+<main>
     <h3>Os Mais Lidos da Semana</h3>
     <h3>Seleção de Melhores Livros</h3>
     <h3>Os Mais Procurados</h3>
+</main>
+
 </body>
 </html>
