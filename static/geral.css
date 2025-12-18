@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+/* ===== HEADER ===== */
+header {
+    background-color: #063b6f;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #063b6f;
+}
+
+/* PERFIL À DIREITA */
+.user-menu {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+/* ===== SEARCH ===== */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.search-box {
+    width: 50%;
+    height: 45px;
+    border: 1.5px solid #063b6f;
+    border-radius: 10px;
+    padding: 0 50px;
+    font-size: 16px;
+    background: #FFF;
+}
+
+/* ===== MENU DROPDOWN ===== */
+.dropdown {
+    color: #FFF;
+    font-family: Poly;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.dropdown p {
+        color: #FFF;
+        font-family: Poly;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+}
+
+.dropdown .sair {
+    color: #063b6f;
+    font-weight: bold;
+}
+
+/* ===== SECTIONS ===== */
+.section {
+    color: #036;
+    font-family: "Poltawski Nowy";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.section h2 {
+    color: #036;
+    font-family: "Poltawski Nowy";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 480px;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.arrow {
+    font-size: 30px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.cards {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+
+.card {
+    width: 180px;
+    height: 120px;
+    background-color: #cfd3d7;
+}
+
+.lupa {
+    width: 20px;
+    height: 20px;
+    fill: black;
+    position: relative;
+    top: 77px;       /* move para baixo */
+    left: 469px;     /* move para a direita (opcional) */
+}
+
+
+.header-left,
+.header-right {
+    display: flex;
+    align-items: center;
+}

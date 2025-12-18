@@ -19,9 +19,9 @@ def cadastro():
 def biblioteca():
     return render_template('biblioteca.html')
 
-@app.route('/perfil')
-def perfil():
-    return render_template('perfil.html')
+@app.route('/alteraçao de dados')
+def alteraçaodedados():
+    return render_template('alteraçao de dados.html')
 
 @app.route('/livro')
 def livro():
